@@ -1,7 +1,10 @@
 """
 print 1 to n using recursion
 """
-def solve(n):
-    print(n)
-if(n-1 >= 1):
-    solve(n-1)
+def printNatural(n):
+    if(n > 0):
+        printNatural(n-1)
+        print(n, end = " ")
+
+n = int(input("enter the N value :"))
+printNatural(n)
